@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  boilerplate-api:
+    build: .
+    image: boilerplate-api
+    restart: always
+    environment:
+      - MODULE_NAME=server
+      - PORT=8000
+    ports:
+      - 8000:8000
